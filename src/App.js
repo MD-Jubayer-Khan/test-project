@@ -1,14 +1,15 @@
 import React from 'react';
-import Navbar from './Component/shared/Navbar';
-import Footer from './Component/shared/Footer';
-import Menu from './Component/Menu';
+import Home from './Component/Home/Home';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
-    <Navbar/>
-     <Menu/>
-    <Footer/>
+      <Home/>
+      <Routes>
+        <Route></Route>
+        <Route></Route>
+      </Routes>
     </>
   );
 }

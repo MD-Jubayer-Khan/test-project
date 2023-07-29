@@ -6,7 +6,7 @@ import '../../App.css'
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-white h-20 px-10">
+        <div className="navbar bg-white h-20 px-14 border">
               <div className="navbar-start">
                 <img className='w-40 h-18' src= {logo} alt="logo" />
               </div>
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <span>|</span>
                 <a className="btn btn-link no-underline normal-case text-[#5f6068]"> Add Guest
                   <span className=' border border-primary-200 rounded-full hover transition h-8 w-8 bg-[#657bf7]'>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1.5 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1.5 mt-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </span>
                 </a>
