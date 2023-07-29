@@ -102,7 +102,6 @@ const Menu = () => {
           <MenuItem
             key={item.label}
             item ={item}
-            // selected={=== item.label}
           />
         ))}
     </div>

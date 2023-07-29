@@ -11,11 +11,11 @@ const Navbar = () => {
                 <img className='w-40 h-18' src= {logo} alt="logo" />
               </div>
               <div className="navbar-center border border-gray-200 rounded-full hover:shadow-md transition">
-                <a className="btn btn-link no-underline normal-case text-base text-black">Anywhere</a>
+                <a className="btn btn-link hover:no-underline no-underline normal-case text-base text-black ">Anywhere</a>
                 <span>|</span>
-                <a className="btn btn-link no-underline normal-case text-base text-black">Any Week</a>
+                <a className="btn btn-link hover:no-underline no-underline normal-case text-base text-black">Any Week</a>
                 <span>|</span>
-                <a className="btn btn-link no-underline normal-case text-[#5f6068]"> Add Guest
+                <a className="btn btn-link hover:no-underline no-underline normal-case text-[#5f6068]"> Add Guest
                   <span className=' border border-primary-200 rounded-full hover transition h-8 w-8 bg-[#657bf7]'>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1.5 mt-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
@@ -23,7 +23,7 @@ const Navbar = () => {
                 </a>
               </div>
               <div className="navbar-end">
-                  <p className=' mr-4 text-black btn btn-link no-underline normal-case text-base'>Airbnb your Home</p>
+                  <p className=' mr-4 text-black btn btn-link no-underline normal-case text-base hover:no-underline'>Airbnb your Home</p>
                      <div className="dropdown cursor-pointer container">
                      <label tabIndex={0} className=" mx-1 mb-2">
                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-8 mb-2 stroke-current  cursor-pointer squared"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
