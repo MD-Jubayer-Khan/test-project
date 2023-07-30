@@ -14,13 +14,13 @@ const GuestModal = () => {
              </div>
                 <div className="pt-8">
               <h1 className="text-xl text-black font-bold">Where do you wanna go?</h1>
-              <p className="py-2 pl-1 text-[#848181]"> find the perfect location!</p>
+              <p className="py-2 pl-1 text-[#848181]"> Find the perfect location!</p>
               <div className='pb-6 border-b-2'>
                 <input type="text" placeholder="Anywhere" className="input input-bordered w-full mt-4 bg-[#ffffff]"/>
               </div>
 
               <img src={img}alt="" className='py-8 w-full'/>
-              <h4 className='btn w-full mt-4 bg-[#554bea] hover:bg-[#5470f9] normal-case'>Search</h4>
+              <h4 className='btn w-full mt-4 bg-[#554bea] hover:bg-[#5470f9] normal-case text-[#ffffff]'>Search</h4>
               
         </div>
           </form>
