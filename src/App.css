@@ -7,16 +7,6 @@
   pointer-events: none;
 }
 
-.container{
-  border: 1px solid rgb(187, 183, 183);
-  border-radius: 20px;
-  width: 70px;
-  height: 36px;
-}
-
-.squared {
-  margin-bottom: 13px;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -99,7 +99,8 @@ const Menu = () => {
           items-center 
           justify-evenly
           bg-[#ffffff]
-          px-20
+          px-18
+          pl-8
           text-black-600
           border-b-2 border-gray
         "

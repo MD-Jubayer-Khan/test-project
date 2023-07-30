@@ -2,11 +2,11 @@
 import React from 'react';
 import logo from '../../Assets/logo.png'
 import profile from '../../Assets/profile.webp'
-import '../../App.css'
+import '../../style/custom.css'
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-white h-20 px-14 border">
+        <div className="navbar bg-white h-20 px-16 border">
               <div className="navbar-start">
                 <img className='w-40 h-18' src= {logo} alt="logo" />
               </div>
