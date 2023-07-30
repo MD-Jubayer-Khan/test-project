@@ -8,7 +8,7 @@ const MenuItem = ({ item, isSelected, onItemClick }) => {
     return (
       <div
       onClick={() => onItemClick(label)}
-      className={`active:text-black ${isSelected ? 'text-primary border-b-2 border-primary' : ''}`}
+      className={` ${isSelected ? 'text-primary border-b-2 border-primary' : 'text-[#685f5f]'}`}
     >
         <Icon size={30}></Icon>
          <div className="">
