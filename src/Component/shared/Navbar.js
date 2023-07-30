@@ -26,7 +26,7 @@ const Navbar = () => {
                 </a>
               </div>
               <div className="navbar-end">
-                  <p className=' mr-4 text-black btn btn-link no-underline normal-case text-base hover:no-underline'>Airbnb your Home</p>
+                  <p  onClick={()=>window.login.showModal()} className=' mr-4 text-black btn btn-link no-underline normal-case text-base hover:no-underline'>Airbnb your Home</p>
                      <div className="dropdown cursor-pointer container hover:shadow-md transition">
                      <label tabIndex={0} className=" mx-1 mb-2">
                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-8 mb-2 stroke-current  cursor-pointer squared"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
