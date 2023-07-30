@@ -1,23 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const MenuItem = ({item}) => {
+const MenuItem = ({ item, isSelected, onItemClick }) => {
   
-  
-  const [selected, setSelected] = useState('')
-  
-    const {label, icon: Icon} = item
-console.log(selected, label);
-    const handleClicked =()=>{
-      setSelected(label)
-     if(selected === label && selected){
-      setSelected('')
-     }
-
-    }
+  const { label, icon: Icon } = item;
 
 
     return (
-      <div onClick={handleClicked}  className={`active:text-black active-item ${selected ? 'text-primary underline' : ''}`}>
+      <div
+      onClick={() => onItemClick(label)}
+      className={`active:text-black ${isSelected ? 'text-primary border-b-2 border-primary' : ''}`}
+    >
         <Icon size={30}></Icon>
          <div className="">
           {label}

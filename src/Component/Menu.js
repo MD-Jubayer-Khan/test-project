@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
 import { 
   GiBarn, 
@@ -15,6 +15,7 @@ import { BsSnow } from 'react-icons/bs';
 import MenuItem from './MenuItem';
 
 const Menu = () => {
+  const [selectedItem, setSelectedItem] = useState(null);
 
  const AllMenuItems = [
         {
@@ -83,7 +84,12 @@ const Menu = () => {
           description: 'This property is in a barn!'
         },
       ]
-      
+
+
+      const handleItemClick = (label) => {
+        setSelectedItem((prevSelectedItem) => (prevSelectedItem === label ? null : label));
+      };
+
     return (
       <div
         className="
@@ -94,14 +100,16 @@ const Menu = () => {
           justify-evenly
           bg-[#ffffff]
           px-20
-          py-4
           text-black-600
+          border-b-2 border-gray
         "
       >
-        {AllMenuItems.map((item) => (
+        {AllMenuItems.map((item, index) => (
           <MenuItem
-            key={item.label}
-            item ={item}
+          key={index}
+          item={item}
+          isSelected={selectedItem === item.label}
+          onItemClick={handleItemClick}
           />
         ))}
     </div>
